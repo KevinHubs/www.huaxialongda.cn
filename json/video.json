@@ -1,0 +1,94 @@
+[
+	{
+		"name": "我们的2016——钦赐龙藏语音录制工程团队",
+		"id": 1,
+		"url": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.1 10:00",
+		"status": "通过",
+		"audit":"通过|未通过"
+		
+	}
+	, {
+		"name": "《正法藏音》——菩提伽耶正觉塔下李罕恭诵",
+		"id": 2,
+		"url": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.2 11:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "印迹——朝圣之旅印度行",
+		"id": 3,
+		"url": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.3 12:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "钦赐龙藏播经机背后的故事",
+		"id": 4,
+		"url": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.5 13:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "如何使用播经机",
+		"id": 5,
+		"url": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.5 14:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "怎样请购播经机（上集）",
+		"id": 6,
+		"url": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.5 15:00",
+		"status": "通过",
+		"audit":"未通过"
+		
+	}
+	, {
+		"name": "怎样请购播经机（下集）",
+		"id": 7,
+		"url": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.6 14:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "一个人的录音棚",
+		"id": 8,
+		"url": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.7 14:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "李罕诵经",
+		"id": 9,
+		"url": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.8 15:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+	, {
+		"name": "一刻演讲",
+		"id": 10,
+		"url": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.9 14:00",
+		"status": "通过",
+		"audit":"未通过"
+	}
+]

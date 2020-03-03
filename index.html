@@ -1,73 +1,18 @@
-<!DOCTYPE html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"><meta name=msapplication-tap-highlight content=no><meta name=apple-mobile-web-app-capable content=yes><meta name=x5-fullscreen content=true><meta name=fullscreen content=yes><meta name=360-fullscreen content=true><meta name=renderer content=webkit><link rel="shortcut icon" href=https://mhb.hanyujingyun.cn/favicon.ico type=image/x-icon><script src="./static/wxLogin.js?ver=1.04"></script><link rel=stylesheet href=https://g.alicdn.com/de/prismplayer/2.8.2/skins/default/aliplayer-min.css><link rel=stylesheet href=./static/aliplayer.css><style>#loading{
-			/* 
-			width: 100%;
-			height: 100%;
-			z-index: 1000;
-			
-			justify-content: center;
-			align-items: center;
-			background: rgba(0,0,0,0.5); */
-			position: fixed;
-			top: 0;
-			display: none;
-			
-		}
-
-		#loading .uni-toast{
-			position: fixed;
-			z-index: 999;
-			width: 8em;
-			top: 50%;
-			left: 50%;
-			-webkit-transform: translate(-50%,-50%);
-			transform: translate(-50%,-50%);
-			background: rgba(17,17,17,.7);
-			text-align: center;
-			border-radius: 5px;
-			color: #fff;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-flow: column;
-			padding: 10upx;
-		}
-		#loading .loader{
-			margin: 20px 0 0;
-			width: 38px;
-			height: 38px;
-			vertical-align: baseline;
-			animation: loading 1s steps(12) infinite;
-			background: rgba(0,0,0,0) url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=") no-repeat;
-			background-size: 100%;
-		}
-		.loading__content {
-			margin: 0 0 15px;
-		}
-		
-		@-webkit-keyframes loading {
-			0% {
-				-webkit-transform: rotate(0deg);
-				transform: rotate(0deg)
-			}
-
-			to {
-				-webkit-transform: rotate(1turn);
-				transform: rotate(1turn)
-			}
-		}</style><title>李罕诵经</title><script>document.addEventListener('DOMContentLoaded', function() {
-				document.documentElement.style.fontSize = document.documentElement.clientWidth / 375*10 + 'px'
-			})</script><link rel=stylesheet href=./static/index.css><script>// wxLogin.plateform();
-			// wxLogin.systerm();
-			wxLogin.toWxLogin();
-			//等到document加完,隐藏loading
-			document.onReady =  function(){
-				document.getElementById("loading").style.display = 'none';
-				document.documentElement.webkitRequestFullScreen();
-			}
-			/*----20190523 end ----*/</script></head><body><div id=loading><div class=uni-toast style="pointer-events: none;"><i class=loader></i><p class=loading__content>加载中...</p></div></div><noscript><strong>Please enable JavaScript to continue.</strong></noscript><div id=app></div><script>var _hmt = _hmt || [];
-		  (function() {
-			let hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?801d2e1f6038350b38703d9b5a7263a0";
-			let s = document.getElementsByTagName("script")[0]; 
-			s.parentNode.insertBefore(hm, s);
-		  })();</script><script charset=utf-8 src=https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js></script><script src=./static/js/chunk-vendors.78e310b4.js></script><script src=./static/js/index.2216f3d6.js></script></body></html>
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><title>李罕诵经—PC官网</title><meta name=keywords content=李罕，李罕诵经，念佛机，播经机，李罕官方网，金刚经，心经，法华经，楞严经，药师经，地藏经，普门品，佛，佛教，如来，学佛，普贤，观音，地藏，文殊菩萨，弥勒，播经机，诵经机，阿弥陀佛，大势至，绿度母，大师，法师，出家，狮子吼，般若，打坐，佛音，梵音，艺术，素食者，檀香，静，禅，美声，佛具店，结缘，烧香，海潮音，西方极乐，法会，寺院，超度，保平安，净土，宗教，因缘果，六道轮回，转世，活佛，悟道，三宝，舍利子，佛塔，菩提心，湖心亭看雪客，忏悔，皈依，僧人，莲花，地藏七，发心，南海，大唐玄奘，邓超,量子学，王菲><link rel="shortcut icon" href=https://dock.lihan.ltd/favicon.ico type=image/x-icon><link rel=stylesheet href=https://at.alicdn.com/t/font_1107581_qjd9wgp7xfe.css><script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4a595e3385754c4fce728f1ae8692e24";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script><link href=static/css/chunk-0076e32f.5caa8fb8.css rel=prefetch><link href=static/css/chunk-057bd137.6a439137.css rel=prefetch><link href=static/css/chunk-09c7bd22.6e6d6d70.css rel=prefetch><link href=static/css/chunk-1f1c8f16.77e3bb83.css rel=prefetch><link href=static/css/chunk-310d2ba8.8cbb8745.css rel=prefetch><link href=static/css/chunk-317af372.fa339dea.css rel=prefetch><link href=static/css/chunk-376aaa16.fbc20b84.css rel=prefetch><link href=static/css/chunk-4002930a.4fb36652.css rel=prefetch><link href=static/css/chunk-4575863c.c39af738.css rel=prefetch><link href=static/css/chunk-49619122.fa4c4020.css rel=prefetch><link href=static/css/chunk-4bbb7de0.d416027a.css rel=prefetch><link href=static/css/chunk-5443265b.5fd2c961.css rel=prefetch><link href=static/css/chunk-56d22466.132ae758.css rel=prefetch><link href=static/css/chunk-65265504.921faa97.css rel=prefetch><link href=static/css/chunk-65d7cb36.90a45aaa.css rel=prefetch><link href=static/css/chunk-6ebb0665.0aa428d4.css rel=prefetch><link href=static/css/chunk-7614e2c6.fa0242bc.css rel=prefetch><link href=static/css/chunk-7eede5c1.04d5e08e.css rel=prefetch><link href=static/css/chunk-81a63166.6f0d0688.css rel=prefetch><link href=static/css/chunk-8537a29e.60802582.css rel=prefetch><link href=static/css/chunk-88cc773e.9eaf0b9b.css rel=prefetch><link href=static/css/chunk-b9da510a.f2aafc9f.css rel=prefetch><link href=static/css/chunk-cb5105f6.14e65b1c.css rel=prefetch><link href=static/css/chunk-e4855552.b494c4cd.css rel=prefetch><link href=static/css/chunk-f2d8e444.774d9f37.css rel=prefetch><link href=static/js/chunk-0076e32f.ed643d0a.js rel=prefetch><link href=static/js/chunk-057bd137.cc2103d0.js rel=prefetch><link href=static/js/chunk-09c7bd22.d797a932.js rel=prefetch><link href=static/js/chunk-13d1ea68.1599ee9e.js rel=prefetch><link href=static/js/chunk-1f1c8f16.3aa880dc.js rel=prefetch><link href=static/js/chunk-2d21f097.a3e02ca2.js rel=prefetch><link href=static/js/chunk-310d2ba8.280e840b.js rel=prefetch><link href=static/js/chunk-317af372.912e5db1.js rel=prefetch><link href=static/js/chunk-376aaa16.79f56991.js rel=prefetch><link href=static/js/chunk-4002930a.37739513.js rel=prefetch><link href=static/js/chunk-4575863c.feadd472.js rel=prefetch><link href=static/js/chunk-49619122.67808efe.js rel=prefetch><link href=static/js/chunk-4bbb7de0.9e228b13.js rel=prefetch><link href=static/js/chunk-5443265b.85bebdc0.js rel=prefetch><link href=static/js/chunk-56d22466.9c157d4c.js rel=prefetch><link href=static/js/chunk-65265504.a261dbcf.js rel=prefetch><link href=static/js/chunk-65d7cb36.2236623a.js rel=prefetch><link href=static/js/chunk-6ebb0665.62ec4ebf.js rel=prefetch><link href=static/js/chunk-7614e2c6.cc69de9e.js rel=prefetch><link href=static/js/chunk-7eede5c1.3a2c7179.js rel=prefetch><link href=static/js/chunk-81a63166.b5d98403.js rel=prefetch><link href=static/js/chunk-8537a29e.a1de3ebd.js rel=prefetch><link href=static/js/chunk-88cc773e.9851e245.js rel=prefetch><link href=static/js/chunk-b9da510a.e1933934.js rel=prefetch><link href=static/js/chunk-cb5105f6.bbeb343b.js rel=prefetch><link href=static/js/chunk-e4855552.d1c15523.js rel=prefetch><link href=static/js/chunk-f2d8e444.44416628.js rel=prefetch><link href=static/css/chunk-vendors.4a841727.css rel=preload as=style><link href=static/css/index.ebcd7313.css rel=preload as=style><link href=static/js/chunk-vendors.e714287e.js rel=preload as=script><link href=static/js/index.21921194.js rel=preload as=script><link href=static/css/chunk-vendors.4a841727.css rel=stylesheet><link href=static/css/index.ebcd7313.css rel=stylesheet></head><script>function browserRedirect() {
+      var sUserAgent = navigator.userAgent.toLowerCase();
+      if (
+        /ipad|iphone|midp|rv:1.2.3.4|ucweb|android|windows ce|windows mobile/.test(
+          sUserAgent
+        )
+      ) {
+        //跳转移动端页面
+        window.location.href = "http://m.lihan.ltd";
+      }
+    }
+    browserRedirect();</script><body><div id=app></div><script src=static/js/chunk-vendors.e714287e.js></script><script src=static/js/index.21921194.js></script></body></html>

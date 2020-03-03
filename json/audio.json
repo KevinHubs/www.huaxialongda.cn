@@ -1,0 +1,141 @@
+[
+	{
+		"audioName": "了凡四训",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.1 10:00",
+		"status": "通过",
+		"audit":"通过|未通过"
+				
+	}, {
+		"audioName": "文殊菩萨心咒",
+		"audioCoding": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.2 11:00",
+		"status": "通过",
+		"audit":"未通过"
+	}, {
+		"audioName": "御制救度佛母赞",
+		"audioCoding": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.3 12:00",
+    	"status": "待审核",
+		"audit":"通过|未通过"
+
+	}, {
+		"audioName": "地藏王菩萨圣号",
+		"audioCoding": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.5 10:00",
+    	"status": "上线",
+		"audit":"上线"
+
+	}, {
+		"audioName": "仁王护国般若波罗蜜多经",
+		"audioCoding": "",
+		"uploader": "李大虎",
+		"uploadTime": "2019-2.6 3:00",
+      	"status": "通过",
+		"audit":"通过|未通过"
+
+	}, {
+		"audioName": "礼佛大忏悔文",
+		"audioCoding": "",
+		"uploader": "杨大秦",
+		"uploadTime": "2019-2.7 5:00",
+    	"status": "下线",
+		"audit":"下线"
+	}, {
+		"audioName": "佛说无量寿经",
+		"audioCoding": "",
+		"uploader": "小春",
+		"uploadTime": "2019-2.8 6:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "妙法莲华经",
+		"audioCoding": "",
+		"uploader": "朱小妹",
+		"uploadTime": "2019-2.9 7:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+		
+	}, {
+		"audioName": "大悲神咒",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.10 5:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说辟除贼害咒经",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.11 12:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	},{
+		"audioName": "拔济苦难陀罗尼经",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.13 14:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说疗痔病经",
+		"audioCoding": "",
+		"uploader": "李大虎",
+		"uploadTime": "2019-2.15 12:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说解忧经",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.16 10:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "增慧陀罗尼经",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.16 9:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说息除贼难陀罗尼经",
+		"audioCoding": "",
+		"uploader": "国祥",
+		"uploadTime": "2019-2.17 18:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说八种长养功德经",
+		"audioCoding": "",
+		"uploader": "蓝晶晶",
+		"uploadTime": "2019-2.18 19:00",
+     	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "地藏禅简明仪轨",
+		"audioCoding": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.18 17:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "佛说摩利支天经",
+		"audioCoding": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.19 10:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}, {
+		"audioName": "金刚般若波罗蜜经",
+		"audioCoding": "",
+		"uploader": "刘大壮",
+		"uploadTime": "2019-2.20 17:00",
+    	"status": "通过",
+		"audit":"通过|未通过"
+	}
+]
